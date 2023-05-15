@@ -1,0 +1,18 @@
+Add a class to the body that matches the page you’re on. For instance, on the about page use
+
+<body class="about">
+
+Now add an ID to each of your nav links which also ties it to the page, for instance
+
+<a id="about" href="/about/">About</a>
+
+Now in your CSS add a rule for each page/link as follows:
+
+body.about #nav #about,
+body.contact #nav #contact,
+body.home #nav #home
+{
+  /* Add your active styles here */
+  color: #cc0000;
+  font-weight: bold;
+  }
